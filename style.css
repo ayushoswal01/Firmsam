@@ -1,203 +1,54 @@
-/* ========= GLOBAL RESET ========= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* ========= CONTAINER ========= */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
-}
-
-/* ========= HEADER ========= */
 header {
-  background: linear-gradient(135deg, #002d62, #0b3d91);
-  color: #fff;
-  padding: 25px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, #003973, #005AA7);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  text-align: center;
-  font-size: 2rem;
+  color: white;
+  font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  padding-top: 15px;
+  gap: 2rem;
 }
 
 nav ul li a {
-  color: white;
+  position: relative;
   text-decoration: none;
+  color: white;
   font-weight: 500;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #FFD700; /* Gold underline */
+  transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  text-decoration: none;
+  color: #FFD700;
 }
 
-/* ========= HERO ========= */
-.hero {
-  background: url("https://via.placeholder.com/1400x400?text=CA+Firm+Banner") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 45, 98, 0.55);
-}
-
-.hero h2 {
-  position: relative;
-  font-size: 2.2rem;
-  z-index: 1;
-}
-
-/* ========= SECTIONS ========= */
-section {
-  background: white;
-  margin: 50px auto;
-  padding: 50px 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
-}
-
-section h2 {
-  text-align: center;
-  color: #002d62;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-
-section p {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  font-size: 1rem;
-}
-
-/* ========= OWNER SECTION ========= */
-.owner-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.owner-image img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.owner-info {
-  max-width: 600px;
-}
-
-.owner-info h3 {
-  color: #0b3d91;
-  margin-bottom: 8px;
-}
-
-/* ========= SERVICES ========= */
-.services .service-grid {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  justify-content: center;
-}
-
-.service-box {
-  flex: 1 1 300px;
-  background: #eef4ff;
-  padding: 25px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.service-box:hover {
-  background: #dce8ff;
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* ========= BUTTONS ========= */
-.btn {
-  display: inline-block;
-  background: #0b3d91;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #082b66;
-}
-
-/* ========= FOOTER ========= */
-footer {
-  background: #002d62;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-
-/* ========= MEDIA QUERIES ========= */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .owner-content {
-    flex-direction: column;
-  }
-  
-  .service-box {
-    flex: 1 1 100%;
-  }
-  
-  .container {
-    width: 95%;
-  }
+nav ul li a:hover::after {
+  width: 100%;
 }
