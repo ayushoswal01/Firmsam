@@ -1,107 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RDG & Co. | CA Firm</title>
-  <meta name="description" content="RDG & Co. is a Chartered Accountant firm offering tax, audit, and consultancy services based in Kalyan, India." />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDG & Associates - Trusted Chartered Accountants Since 1981</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>RDG & Associates</h2>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#team" class="nav__link">Team</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#knowledge" class="nav__link">Knowledge</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <div class="container nav-container">
-      <h1 class="logo">RDG & Co.</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#owner">Founder</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <div class="hero__animation"></div>
+            </div>
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Trusted Chartered Accountants
+                        <span class="hero__accent">Since 1981</span>
+                    </h1>
+                    <p class="hero__description">
+                        RDG & Associates provides comprehensive accounting, taxation, and business advisory services with over 40 years of excellence in financial expertise.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary">Get Consultation</a>
+                        <a href="#services" class="btn btn--outline">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Hero -->
-  <section id="home" class="hero fade-in">
-    <div class="container">
-      <h2>Trusted Chartered Accountants Since 1981</h2>
-      <p>Delivering professional audit, tax, and consulting services.</p>
-    </div>
-  </section>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About RDG & Associates</h2>
+                    <p class="section__description">
+                        Established in 1981, we have been providing trusted financial services across Maharashtra with integrity, expertise, and personalized attention.
+                    </p>
+                </div>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            With over four decades of experience, RDG & Associates has established itself as a leading chartered accountancy firm in Kalyan, Maharashtra. Our commitment to excellence and client satisfaction has helped us build lasting relationships with businesses across 15 different industries.
+                        </p>
+                        <p>
+                            We specialize in providing comprehensive financial solutions including taxation, auditing, business consulting, and startup advisory services. Our expert team ensures compliance, accuracy, and strategic financial planning for sustainable business growth.
+                        </p>
+                    </div>
+                    <div class="stats">
+                        <div class="stats__item">
+                            <span class="stats__number" data-target="40">0</span>
+                            <span class="stats__suffix">+</span>
+                            <p class="stats__label">Years Experience</p>
+                        </div>
+                        <div class="stats__item">
+                            <span class="stats__number" data-target="500">0</span>
+                            <span class="stats__suffix">+</span>
+                            <p class="stats__label">Clients Served</p>
+                        </div>
+                        <div class="stats__item">
+                            <span class="stats__number" data-target="15">0</span>
+                            <span class="stats__suffix"></span>
+                            <p class="stats__label">Industries</p>
+                        </div>
+                        <div class="stats__item">
+                            <span class="stats__number" data-target="99">0</span>
+                            <span class="stats__suffix">%</span>
+                            <p class="stats__label">Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- About -->
-  <section id="about" class="about fade-in">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        We are a Kalyan-based CA firm with over 40 years of experience in Cost Auditing, Taxation, and Financial Consulting. 
-        Our clientele spans across multiple sectors including Pharma, Telecom, and Manufacturing.
-      </p>
-    </div>
-  </section>
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Services</h2>
+                    <p class="section__description">
+                        Comprehensive financial and business solutions tailored to your specific needs
+                    </p>
+                </div>
+                <div class="services__grid">
+                    <div class="service__card">
+                        <div class="service__icon">📊</div>
+                        <h3 class="service__title">Cost & Management Accounting</h3>
+                        <p class="service__description">
+                            Comprehensive cost audits, costing systems, and operational auditing solutions for optimal financial control and decision-making.
+                        </p>
+                        <ul class="service__features">
+                            <li>Cost Analysis</li>
+                            <li>Budget Planning</li>
+                            <li>Performance Review</li>
+                        </ul>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">📋</div>
+                        <h3 class="service__title">Income Tax & GST</h3>
+                        <p class="service__description">
+                            Complete tax compliance, return filing, tax planning and representation services for individuals and businesses.
+                        </p>
+                        <ul class="service__features">
+                            <li>Tax Filing</li>
+                            <li>GST Compliance</li>
+                            <li>Tax Planning</li>
+                        </ul>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">💼</div>
+                        <h3 class="service__title">Business Consulting</h3>
+                        <p class="service__description">
+                            Strategic business advisory, due diligence, and valuation services to drive growth and efficiency.
+                        </p>
+                        <ul class="service__features">
+                            <li>Strategy Development</li>
+                            <li>Due Diligence</li>
+                            <li>Valuations</li>
+                        </ul>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">🔍</div>
+                        <h3 class="service__title">Audit Services</h3>
+                        <p class="service__description">
+                            Thorough financial audits, internal audits, and compliance reviews ensuring accuracy and transparency.
+                        </p>
+                        <ul class="service__features">
+                            <li>Financial Audits</li>
+                            <li>Internal Audits</li>
+                            <li>Compliance Review</li>
+                        </ul>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">💰</div>
+                        <h3 class="service__title">Corporate Finance</h3>
+                        <p class="service__description">
+                            Financial restructuring, fundraising, and corporate advisory services for business expansion.
+                        </p>
+                        <ul class="service__features">
+                            <li>Restructuring</li>
+                            <li>Fundraising</li>
+                            <li>Financial Advisory</li>
+                        </ul>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">🚀</div>
+                        <h3 class="service__title">Startup Advisory</h3>
+                        <p class="service__description">
+                            Complete support for new businesses including incorporation, compliance setup, and growth strategies.
+                        </p>
+                        <ul class="service__features">
+                            <li>Incorporation</li>
+                            <li>Compliance Setup</li>
+                            <li>Growth Strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Services -->
-  <section id="services" class="services fade-in">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-grid">
-        <div class="service-box">
-          <h3>Cost & Management Accounting</h3>
-          <p>Cost audits, costing systems, and operational auditing solutions.</p>
+        <!-- Team Section -->
+        <section class="team section" id="team">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Team</h2>
+                    <p class="section__description">
+                        Meet our experienced professionals dedicated to your financial success
+                    </p>
+                </div>
+                <div class="team__grid">
+                    <div class="team__card">
+                        <div class="team__image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b77c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="CMA Anna Bills">
+                        </div>
+                        <div class="team__content">
+                            <h3 class="team__name">CMA Anna Bills</h3>
+                            <p class="team__designation">Founding Partner</p>
+                            <p class="team__experience">10+ years experience</p>
+                            <p class="team__specialization">Taxation, Auditing, Cost Management</p>
+                            <p class="team__bio">
+                                CMA Anna Bills is the founding partner of RDG & Associates with over 10 years of experience in taxation, auditing, and cost management. Her expertise has helped numerous businesses streamline their financial operations with integrity and precision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Knowledge Base Section -->
+        <section class="knowledge section" id="knowledge">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Knowledge Base</h2>
+                    <p class="section__description">
+                        Stay updated with the latest regulatory changes and financial insights
+                    </p>
+                </div>
+                <div class="knowledge__grid">
+                    <article class="knowledge__card">
+                        <div class="knowledge__meta">
+                            <span class="knowledge__category">GST Updates</span>
+                            <span class="knowledge__date">March 15, 2024</span>
+                        </div>
+                        <h3 class="knowledge__title">GST Return Filing Deadline Extended</h3>
+                        <p class="knowledge__description">
+                            Latest updates on GST return filing deadlines and compliance requirements for businesses.
+                        </p>
+                    </article>
+                    <article class="knowledge__card">
+                        <div class="knowledge__meta">
+                            <span class="knowledge__category">Tax Updates</span>
+                            <span class="knowledge__date">March 10, 2024</span>
+                        </div>
+                        <h3 class="knowledge__title">Income Tax Changes for FY 2024-25</h3>
+                        <p class="knowledge__description">
+                            Important changes in income tax regulations and new compliance requirements for taxpayers.
+                        </p>
+                    </article>
+                    <article class="knowledge__card">
+                        <div class="knowledge__meta">
+                            <span class="knowledge__category">Startup Advisory</span>
+                            <span class="knowledge__date">March 5, 2024</span>
+                        </div>
+                        <h3 class="knowledge__title">New Compliance Requirements for Startups</h3>
+                        <p class="knowledge__description">
+                            Updated regulatory requirements for startup registration and ongoing compliance obligations.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__description">
+                        Ready to take your business to the next level? Contact us for a consultation.
+                    </p>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">📍</div>
+                            <div class="contact__details">
+                                <h4>Office Address</h4>
+                                <p>123, College Road<br>Kalyan, Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">📞</div>
+                            <div class="contact__details">
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">✉️</div>
+                            <div class="contact__details">
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:contact@rdgca.com">contact@rdgca.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/xwpnakll" method="POST">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message *</label>
+                            <textarea id="message" name="message" class="form__input form__textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__loading hidden">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="form__message" id="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>RDG & Associates</h3>
+                    <p>Trusted Chartered Accountants Since 1981</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Cost & Management Accounting</a></li>
+                            <li><a href="#services">Income Tax & GST</a></li>
+                            <li><a href="#services">Business Consulting</a></li>
+                            <li><a href="#services">Audit Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#knowledge">Knowledge Base</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>123, College Road, Kalyan</li>
+                            <li>Maharashtra, India</li>
+                            <li>+91 98765 43210</li>
+                            <li>contact@rdgca.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 RDG & Associates. All rights reserved.</p>
+            </div>
         </div>
-        <div class="service-box">
-          <h3>Income Tax & GST</h3>
-          <p>Compliances, return filing, tax planning and representation.</p>
-        </div>
-        <div class="service-box">
-          <h3>Consulting</h3>
-          <p>Business advisory, due diligence, and valuation services.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Owner -->
-  <section id="owner" class="owner fade-in">
-    <div class="container owner-content">
-      <div class="owner-image">
-        <img src="data:image/jpeg;base64,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" />
-      </div>
-      <div class="owner-info">
-        <h2>Meet the Founder</h2>
-        <h3>CMA Anna Bills</h3>
-        <p>
-          CMA Anna Bills is the founding partner of RDG & Associates with over 10 years of experience in taxation, auditing, and cost management.
-          Her expertise has helped numerous businesses streamline their financial operations with integrity and precision.
-        </p>
-      </div>
-    </div>
-  </section>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
 
-  <!-- Contact -->
-  <section id="contact" class="contact fade-in">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:contact@isha.com">contact@.com</a> | Phone: <a href="tel:+1 526479856">+1 5512687465</a></p>
-      <p>Office: 123, College Road, Kalyan, Maharashtra</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Anna & Associates | All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
-
-
-
